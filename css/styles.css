@@ -1,4 +1,11 @@
 
+div.ui.grid{
+	background: #EDEAC7;
+}
+
+article{
+	background: #EDEAC7;
+}
 
 img{
 	width:100%;
@@ -9,4 +16,13 @@ img{
 div.ui.menu{
 	position: absolute;
 	z-index: 1;
+}
+
+.ui.raised.segment{
+	margin-left: 3em;
+	margin-right: 2em;
+}
+
+.ui.grid > .column:not(.row), .ui.grid > .row > .column{
+	padding-right: 0;
 }
