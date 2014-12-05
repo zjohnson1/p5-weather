@@ -1,4 +1,5 @@
 
+
 div.ui.grid{
 	background: #EDEAC7;
 }
@@ -9,20 +10,29 @@ article{
 
 img{
 	width:100%;
-	height: auto;
+	height: 110%;
 	position: relative;
 }
 
 div.ui.menu{
 	position: absolute;
 	z-index: 1;
+	top: 20px;
+	left: 20px;
 }
 
 .ui.raised.segment{
-	margin-left: 3em;
+	margin-left: 2em;
 	margin-right: 2em;
 }
 
+div.ui.raised.segment
+
+article.sixteen.wide.column{
+	margin-top: 2em;
+	margin-bottom: 3em;
+}
+
 .ui.grid > .column:not(.row), .ui.grid > .row > .column{
-	padding-right: 0;
+	padding-right: 0px;
 }
