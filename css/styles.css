@@ -1,5 +1,4 @@
 
-
 div.ui.grid{
 	background: #EDEAC7;
 }
@@ -14,11 +13,31 @@ img{
 	position: relative;
 }
 
+h1,h2{
+	position: absolute;
+	z-index: 1;
+}
+
+h1{
+	bottom: 9.25em;
+	left: 8em;
+}
+
+h2.high{
+	bottom:9em;
+	left: 1.75em;
+}
+
+h2.low{
+	bottom: 8em;
+	left: 6.5em;
+}
+
 div.ui.menu{
 	position: absolute;
 	z-index: 1;
 	top: 20px;
-	left: 20px;
+	left: 70px;
 }
 
 .ui.raised.segment{
@@ -35,4 +54,15 @@ article.sixteen.wide.column{
 
 .ui.grid > .column:not(.row), .ui.grid > .row > .column{
 	padding-right: 0px;
+}
+
+.ui.label{
+	background-color: #237872;
+}
+
+div.ui.icon.button{
+	position: absolute;
+	z-index: 1;
+	top:20px;
+	left: 20px;
 }

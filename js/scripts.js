@@ -17,3 +17,9 @@
 
 
   });
+//hide zip menu
+$("div.ui.menu").hide();
+
+$("div.ui.icon.button").click(function(){
+  $("div.ui.menu").slideToggle("slow");
+});
