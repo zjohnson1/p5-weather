@@ -13,24 +13,24 @@ img{
 	position: relative;
 }
 
-h1,h2{
+h1,h3{
 	position: absolute;
 	z-index: 1;
 }
 
 h1{
-	bottom: 9.25em;
-	left: 8em;
+	top: 2em;
+	right: 2em;
 }
 
-h2.high{
-	bottom:9em;
-	left: 1.75em;
+h3.high{
+	top:5em;
+	right: 5em;
 }
 
-h2.low{
-	bottom: 8em;
-	left: 6.5em;
+h3.low{
+	top: 5em;
+	right: 3em;
 }
 
 div.ui.menu{

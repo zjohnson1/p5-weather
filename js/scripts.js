@@ -21,5 +21,5 @@
 $("div.ui.menu").hide();
 
 $("div.ui.icon.button").click(function(){
-  $("div.ui.menu").slideToggle("slow");
+  $("div.ui.menu").transition("browse right");
 });
