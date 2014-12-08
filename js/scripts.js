@@ -1,25 +1,60 @@
-  $.simpleWeather({
-    location: 'Austin, TX',
+var cheney = '99004';
+var spokane = '99201';
+var marker = 0;
+var ticker = 1;
+
+$('div.ui.menu').hide();
+
+$('div.ui.icon.button').click(function(){
+  $('div.ui.menu').transition('horizontal flip');
+});
+
+
+$.simpleWeather({
+
+
+
+    
+    location: spokane,
     woeid: '',
     unit: 'f',
-
-
+    
     success: function(weather) {
-        $('.temp').text(weather.temp);
+      //hide all of my icons
+      $('.myIcon').hide();
 
-        $('.current').text(weather.currently);
+      //put temp into h1
+      $('h1').text(weather.temp);
+
+      //put high of the day into h2
+      $('.high').text(weather.high);
+
+      //put low of the day into h2
+      $('.low').text(weather.low);
+
+
+      //enter 5 day data
+        $('div a:nth-child(1)').text(weather.forecast[0].day);
+        $('div a:nth-child(3)').text(weather.forecast[1].day);
+        $('div a:nth-child(5)').text(weather.forecast[2].day);
+        $('div a:nth-child(7)').text(weather.forecast[3].day);
+        $('div a:nth-child(9)').text(weather.forecast[4].day);
+
+      //enter 5 day weather description
+        $('div p:nth-child(2)').text(weather.forecast[0].high);
+        $('div p:nth-child(4)').text(weather.forecast[1].high);
+        $('div p:nth-child(6)').text(weather.forecast[2].high);
+        $('div p:nth-child(8)').text(weather.forecast[3].high);
+        $('div p:nth-child(10)').text(weather.forecast[4].high);
+
+      
+
+      console.log(weather);
+
     },
-
-
+    
     error: function(error) {
       $("#weather").html('<p>'+error+'</p>');
     }
-
-
+    
   });
-//hide zip menu
-$("div.ui.menu").hide();
-
-$("div.ui.icon.button").click(function(){
-  $("div.ui.menu").transition("browse right");
-});
