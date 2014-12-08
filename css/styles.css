@@ -1,3 +1,6 @@
+body{
+	font-family: 'Rancho', cursive;
+}
 
 
 div.ui.grid{
@@ -29,6 +32,10 @@ h1,h3{
 	top: 15px;
 }
 
+p{
+	font-size: 2em;
+}
+
 h1{
 	top: 2em;
 	right: 2em;
@@ -36,12 +43,12 @@ h1{
 
 h3.high{
 	top:5em;
-	right: 5em;
+	right: 2.5em;
 }
 
 h3.low{
-	top: 5em;
-	right: 3em;
+	top: 6.25em;
+	right: 2.5em;
 }
 
 div.ui.menu{
