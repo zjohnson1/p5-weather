@@ -1,3 +1,4 @@
+
 body{
 	font-family: 'Rancho', cursive;
 }
@@ -26,27 +27,28 @@ img.myIcon{
 	width: auto;
 }
 
-h1,h3{
+h1,h2{
 	position: absolute;
 	z-index: 1;
-	top: 15px;
 }
+
 
 p{
 	font-size: 2em;
 }
 
 h1{
-	top: 2em;
-	right: 2em;
+	top: 1em;
+	right: 1em;
+	font-size: 4em;
 }
 
-h3.high{
+h2.high{
 	top:5em;
 	right: 2.5em;
 }
 
-h3.low{
+h2.low{
 	top: 6.25em;
 	right: 2.5em;
 }

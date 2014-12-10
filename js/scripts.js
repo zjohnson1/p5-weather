@@ -14,10 +14,22 @@ $('div.ui.icon.button').click(function(){
   $('div.ui.menu').transition('horizontal flip');
 });
 
+function testResults (div) {
+
+      var zip = div.input.value;
+    
+    }
+
 
 $.simpleWeather({
 
+    //create function called testResults which take in a div takes the form in the div
+    //and assigns the value wich should be a number zip code to the variable zip
+    /*function testResults (div) {
 
+      var zip = div.input.value;
+    
+    }*/
 
     
     location: spokane,
@@ -55,7 +67,18 @@ $.simpleWeather({
         if( weather.currently == 'Sunny'){
           $('img.myIcon.Sunny').show();
         }
-        else if( weather.currently == 'Cloudy')
+        else if( weather.currently == 'Cloudy'){
+          $('img.myIcon.Cloudy').show();
+        }
+        else if( weather.currently == 'Partly Cloudy'){
+          $('img.myIcon.Partly').show();
+        }
+        else if( weather.currently == 'Rainy'){
+          $('img.myIcon.Rain').show();
+        }
+        else{
+          $('h1').text('Need to add this icon ' + weather.currently);
+        }
 
       
 
