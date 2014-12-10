@@ -1,3 +1,9 @@
+div.ui.button.teal{
+	position: absolute;
+	z-index: 2;
+	top: 5em;
+	left: 2em;
+}
 
 body{
 	font-family: 'Rancho', cursive;
@@ -56,8 +62,8 @@ h2.low{
 div.ui.menu{
 	position: absolute;
 	z-index: 1;
-	top: 7px;
-	left: 70px;
+	top: 13px;
+	left: 80px;
 }
 
 .ui.raised.segment{
@@ -79,9 +85,9 @@ article.sixteen.wide.column{
 	background-color: #237872;
 }
 
-div.ui.icon.button{
+div.ui.icon.button.teal{
 	position: absolute;
 	z-index: 1;
-	top:20px;
-	left: 20px;
+	top: 2em;
+	left: 2em;
 }
