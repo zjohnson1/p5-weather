@@ -87,7 +87,7 @@ $('.getGeolocation').on('click', function() {
             $('img.myIcon.Cloudy').show();
           }
           else{
-            $('h1').text('Need to add this icon ' + weather.currently);
+            $('h1').text(weather.currently);
           }
 
         
