@@ -1,3 +1,10 @@
+div.huge.button{
+	position: absolute;
+	z-index: 1;
+	bottom: 1.5em;
+	left: 6em;
+}
+
 div.ui.button.teal{
 	position: absolute;
 	z-index: 2;
@@ -78,7 +85,7 @@ article.sixteen.wide.column{
 }
 
 .ui.grid > .column:not(.row), .ui.grid > .row > .column{
-	padding-right: 0px;
+	padding: 0px;
 }
 
 .ui.label{

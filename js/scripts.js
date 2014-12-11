@@ -1,5 +1,9 @@
 
+$('article').hide();
+$('div.huge.button').click(function(){
+  $('article').transition('drop')
 
+});
 
 $('div.ui.menu').hide();
 $('.myIcon').hide();
@@ -65,11 +69,11 @@ $('.getGeolocation').on('click', function() {
           $('div a:nth-child(9)').text(weather.forecast[4].day);
 
         //enter 5 day weather description
-          $('div p:nth-child(2)').text('High ' + weather.forecast[0].high + ', Low ' + weather.forecast[1].low);
-          $('div p:nth-child(4)').text(weather.forecast[1].high);
-          $('div p:nth-child(6)').text(weather.forecast[2].high);
-          $('div p:nth-child(8)').text(weather.forecast[3].high);
-          $('div p:nth-child(10)').text(weather.forecast[4].high);
+           $('div p:nth-child(2)').text(weather.forecast[0].text + ' High ' + weather.forecast[0].high + ', Low ' + weather.forecast[1].low);
+          $('div p:nth-child(4)').text(weather.forecast[1].text + ' High ' + weather.forecast[1].high + ', Low ' + weather.forecast[1].low);
+          $('div p:nth-child(6)').text(weather.forecast[2].text + ' High ' + weather.forecast[2].high + ', Low ' + weather.forecast[1].low);
+          $('div p:nth-child(8)').text(weather.forecast[3].text + ' High ' + weather.forecast[3].high + ', Low ' + weather.forecast[1].low);
+          $('div p:nth-child(10)').text(weather.forecast[4].text + ' High ' + weather.forecast[4].high + ', Low ' + weather.forecast[1].low);
 
           if( weather.currently == 'Sunny'){
             $('img.myIcon.Sunny').show();
@@ -87,7 +91,7 @@ $('.getGeolocation').on('click', function() {
             $('img.myIcon.Cloudy').show();
           }
           else{
-            $('h1').text(weather.currently);
+            $('img.myIcon.Cloudy').show();
           }
 
         
@@ -133,11 +137,11 @@ $.simpleWeather({
           $('div a:nth-child(9)').text(weather.forecast[4].day);
 
         //enter 5 day weather description
-          $('div p:nth-child(2)').text('High ' + weather.forecast[0].high + ', Low ' + weather.forecast[1].low);
-          $('div p:nth-child(4)').text(weather.forecast[1].high);
-          $('div p:nth-child(6)').text(weather.forecast[2].high);
-          $('div p:nth-child(8)').text(weather.forecast[3].high);
-          $('div p:nth-child(10)').text(weather.forecast[4].high);
+           $('div p:nth-child(2)').text(weather.forecast[0].text + ' High ' + weather.forecast[0].high + ', Low ' + weather.forecast[1].low);
+          $('div p:nth-child(4)').text(weather.forecast[1].text + ' High ' + weather.forecast[1].high + ', Low ' + weather.forecast[1].low);
+          $('div p:nth-child(6)').text(weather.forecast[2].text + ' High ' + weather.forecast[2].high + ', Low ' + weather.forecast[1].low);
+          $('div p:nth-child(8)').text(weather.forecast[3].text + ' High ' + weather.forecast[3].high + ', Low ' + weather.forecast[1].low);
+          $('div p:nth-child(10)').text(weather.forecast[4].text + ' High ' + weather.forecast[4].high + ', Low ' + weather.forecast[1].low);
 
           if( weather.currently == 'Sunny'){
             $('img.myIcon.Sunny').show();
