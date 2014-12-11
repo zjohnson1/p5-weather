@@ -1,8 +1,12 @@
+body{
+	background-color: #77a685;
+}
+
 div.huge.button{
 	position: absolute;
 	z-index: 1;
-	bottom: 1.5em;
-	left: 6em;
+	bottom: -.5em;
+	left: 5em;
 }
 
 div.ui.button.teal{
